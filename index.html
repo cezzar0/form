@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="title">Contact Us Today!</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details"><i class="fa-solid fa-user"></i> First Name</span>
+                    <input type="text" name="F-name" placeholder="First Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details"><i class="fa-solid fa-user"></i> Last Name</span>
+                    <input type="text" name="L-name" placeholder="Last Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details"><i class="fa-regular fa-envelope"></i> E-Mail</span>
+                    <input type="email" name="Email" placeholder="E-Mail Address" required>
+                </div>
+                <div class="input-box">
+                    <span class="details"><i class="fa-solid fa-phone"></i> Phone #</span>
+                    <input type="number" id="phone" name="Phone" placeholder="(845)555-1212" required>
+                </div>
+                <div class="input-box">
+                    <span class="details"><i class="fa-solid fa-map-location-dot"></i> Address</span>
+                    <input type="text" name="Address" placeholder="Address" required>
+                </div>
+                <div class="input-box">
+                    <span class="details"><i class="fa-solid fa-city"></i> City</span>
+                    <input type="text" name="City" placeholder="city" required>
+                </div>
+                <div class="input-box">
+                    <span class="details"><i class="fa-solid fa-house"></i> Zip Code</span>
+                    <input type="number" id="zip" name="Z-Code" placeholder="Zip Code" required>
+                </div>
+                <div class="input-box">
+                    <span class="details"><i class="fa-solid fa-globe"></i> Website or domain name</span>
+                    <input type="text" name="domain" placeholder="Website or domain name..." required>
+                </div>
+
+                <div class="button">
+                    <span class="ask">Do you have hosting?</span>
+                    <div class="answer">
+                        <input type="radio" value="Yes" id="Yes" name="ask">
+                        <label for="Yes">Yes</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" value="No" id="No" name="ask">
+                        <label for="No">No</label>
+                    </div>
+                </div>
+
+                <div class="input-box" id="project">
+                    <span class="details">Project Description: <i class="fa-solid fa-pen"></i></span>
+                    <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Project Description:"></textarea>
+                    <button type="submit" id="submit"><i class="fa-solid fa-paper-plane"></i> Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
